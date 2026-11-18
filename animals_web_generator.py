@@ -7,7 +7,7 @@ def load_data(file_path):
 
 animals_data = load_data('animals_data.json')
 
-# Step 1 - Print Data From File
+# Step 2 - Bring Data into HTML
 
 output = ""
 
