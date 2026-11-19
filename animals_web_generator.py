@@ -15,24 +15,26 @@ def serialize_animal(animal_obj):
     if name:
         output += f'  <div class="card__title">{name}</div>\n'
 
-    output += '  <p class="card__text">\n'
+    output += '  <div class="card__text">\n'
+    output += '  <ul>\n'
 
     characteristics = animal_obj.get("characteristics", {})
 
     diet = characteristics.get("diet")
 
     if diet:
-        output += f"    <strong>Diet:</strong> {diet}<br/>\n"
+        output += f"    <li><strong>Diet:</strong> {diet}<br/>\n"
 
     locations = animal_obj.get("locations")
     if locations:
-        output += f"    <strong>Location:</strong> {locations[0]}<br/>\n"
+        output += f"    <li><strong>Location:</strong> {locations[0]}<br/>\n"
 
     animal_type = characteristics.get("type")
     if animal_type:
-        output += f"    <strong>Type:</strong> {animal_type}<br/>\n"
+        output += f"    <li><strong>Type:</strong> {animal_type}<br/>\n"
 
-    output += "  </p>\n"
+    output += "  </ul>\n"
+    output += "  </div>\n"
     output += "</li>\n"
     return output
 
