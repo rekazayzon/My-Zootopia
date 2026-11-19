@@ -7,7 +7,7 @@ def load_data(file_path):
 
 animals_data = load_data('animals_data.json')
 
-# Step 3 - Making It Nice By Formatting
+# Step 4 - Serialization
 
 output = ""
 
@@ -17,23 +17,27 @@ for animal in animals_data:
 
   name = animal.get("name")
   if name:
-    output += f"Name: {name}<br/>\n"
-  # !!! handling potentially empty characteristics field by defining it as an empty dict
+    output += f'  <div class="card__title">{name}</div>\n'
+
+  # Open card text paragraph
+  output += '  <p class="card__text">\n'
+
   characteristics = animal.get("characteristics", {})
 
   diet = characteristics.get("diet")
 
   if diet:
-    output += f"Diet: {diet}<br/>\n"
+    output += f"    <strong>Diet:</strong> {diet}<br/>\n"
 
   locations = animal.get("locations")
   if locations:
-    output += f"Location: {locations[0]}<br/>\n"
+    output += f"    <strong>Location:</strong> {locations[0]}<br/>\n"
 
   animal_type = characteristics.get("type")
   if animal_type:
-    output += f"Type: {animal_type}<br/>\n"
-  # Close card
+    output += f"    <strong>Type:</strong> {animal_type}<br/>\n"
+  # Close card text paragraph and card
+  output += "  </p>\n"
   output += "</li>\n"
 
 # reading html template
