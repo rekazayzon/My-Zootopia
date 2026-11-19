@@ -14,6 +14,7 @@
       "North-America"
     ],
     "characteristics": {
+      "name_of_young": "Puppy",
       "distinctive_feature": "Long legs and wide, flat ears",
       "temperament": "Mix of affectionate, loving, and stubborn",
       "training": "Medium",
@@ -46,7 +47,7 @@
     ],
     "characteristics": {
       "main_prey": "Lemmings, voles, hares, other small rodents, berries, insects",
-      "name_of_young": "kit",
+      "name_of_young": "Kit",
       "distinctive_feature": "Thick fur that changes colour with season",
       "habitat": "Polar forest regions",
       "predators": "Snowy Owl, Wolf, Polar Bear",
@@ -90,8 +91,8 @@
       "habitat": "Forests, prairies, deserts, mountains, cities, suburbs, tundra, scrub, near rivers, farms",
       "predators": "Gray wolves, coyotes, eagles, bears, humans and cougars",
       "diet": "Carnivore",
-      "type": "mammal",
-      "common_name": "cross fox",
+      "type": "Mammal",
+      "common_name": "Cross fox",
       "location": "North America and Canada",
       "color": "RedBlackSilver",
       "skin_type": "Fur",
@@ -196,7 +197,7 @@
       "number_of_species": "1",
       "location": "North Africa",
       "slogan": "Found in the African Sahara Desert!",
-      "group": "Mammal",
+      "type": "Mammal",
       "color": "WhiteCreamSandy",
       "skin_type": "Fur",
       "top_speed": "25 mph",
@@ -270,11 +271,11 @@
       "litter_size": "6-30",
       "predators": "Foxes, coyotes, hawks.",
       "diet": "Carnivore",
-      "lifestyle": "Diurnalor Nocturnal Depending on Region and Season",
+      "lifestyle": "Diurnal or nocturnal, depending on region and season",
       "favorite_food": "Mice",
       "common_name": "Fox snake",
       "number_of_species": "-1",
-      "color": "BrownGreyBeigeChestnut",
+      "color": "Brown Grey Beige Chestnut",
       "skin_type": "Scales",
       "lifespan": "approximately 20 years"
     }
@@ -306,8 +307,8 @@
       "habitat": "Leaf nests and tree dens",
       "predators": "Birds of prey, carnivorous mammals",
       "diet": "Omnivore",
-      "type": "rodent",
-      "common_name": "fox squirrel",
+      "type": "Rodent",
+      "common_name": "Fox squirrel",
       "number_of_species": "10",
       "location": "Eastern and central United States",
       "group": "social",
@@ -439,7 +440,7 @@
     ],
     "characteristics": {
       "prey": "kangaroo rat, cottontail, jackrabbit, reptiles, insects, birds",
-      "name_of_young": "pup",
+      "name_of_young": "Puppy",
       "group_behavior": "Solitary",
       "biggest_threat": "habitat destruction, competition from coyotes",
       "most_distinctive_feature": "tiny bodies and enormous ears",
@@ -448,7 +449,7 @@
       "habitat": "desert, grasslands",
       "predators": "coyotes, bobcats, red foxes, birds of prey",
       "diet": "Omnivore",
-      "type": "mammal",
+      "type": "Mammal",
       "common_name": "kit fox",
       "number_of_species": "1",
       "location": "Southwest United States, North and Central Mexico",
@@ -658,6 +659,55 @@
       "skin_type": "Hair",
       "lifespan": "13 – 14 years",
       "weight": "19 lbs"
+    }
+  },
+  {
+    "name": "Vuk",
+    "taxonomy": {
+      "kingdom": "Cartoon-Woods",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "genus": "Vulpes",
+      "scientific_name": "Vulpes Hungaricus"
+    },
+    "locations": [
+      "Fanta-Hungaria"
+    ],
+    "characteristics": {
+      "temperament": "clever, friendly, brave, playful",
+      "main_prey": "eggs",
+      "name_of_young": "Kits",
+      "group_behavior": "Pair",
+      "estimated_population_size": "10",
+      "biggest_threat": "growing old",
+      "habitat": "Fanta-Hungarian Cartoon-Woods",
+      "predators": "Humans",
+      "diet": "Carnivore",
+      "type": "Mammal",
+      "common_name": "róka",
+      "color": "Orange",
+      "skin_type": "Fur"
+    }
+  },
+  {
+    "name": "Fjällräven",
+    "taxonomy": {
+      "kingdom": "Örnsköldsvik",
+      "class": "Clothing and Equipment",
+      "scientific_name": "Instrumenta itineris"
+    },
+    "locations": [
+      "North-Europe, South-Europe, Afrika, Asia, Amerika, Australia"
+    ],
+    "characteristics": {
+      "temperament": "stable, long-lived",
+      "name_of_young": "Kits",
+      "group_behavior": "Pair",
+      "estimated_population_size": "10",
+      "biggest_threat": "growing old",
+      "habitat": "Outdoor environment, school"
     }
   }
 ]
