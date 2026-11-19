@@ -7,31 +7,34 @@ def load_data(file_path):
 
 animals_data = load_data('animals_data.json')
 
-# Step 2 - Bring Data into HTML
+# Step 3 - Making It Nice By Formatting
 
 output = ""
 
 for animal in animals_data:
+  # Open new card for each animal
+  output += '<li class="cards__item">\n'
+
   name = animal.get("name")
   if name:
-    output += f"Name: {name}\n"
+    output += f"Name: {name}<br/>\n"
   # !!! handling potentially empty characteristics field by defining it as an empty dict
   characteristics = animal.get("characteristics", {})
 
   diet = characteristics.get("diet")
 
   if diet:
-    output += f"Diet: {diet}\n"
+    output += f"Diet: {diet}<br/>\n"
 
   locations = animal.get("locations")
   if locations:
-    output += f"Location: {locations[0]}\n"
+    output += f"Location: {locations[0]}<br/>\n"
 
   animal_type = characteristics.get("type")
   if animal_type:
-    output += f"Type: {animal_type}\n"
-
-  output += "\n"
+    output += f"Type: {animal_type}<br/>\n"
+  # Close card
+  output += "</li>\n"
 
 # reading html template
 with open("animals_template.html", "r", encoding="utf-8") as template_file:
